@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Build a Random Quote Machine">
+    <meta name="description" content="Build a Wikipedia Viewer">
     <meta name="author" content="Howard Huang">
 
 
-    <title>Weather App</title>
+    <title>Wikipedia Viewer</title>
 
     <!-- Bootstrap core CSS -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
@@ -22,35 +22,30 @@
 
 <body>
 
-    <div class="site-wrapper">
+    <div class="cover-container">
+        <div class="inner cover">
+            <h1 class="cover-heading">Wikipedia Search</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="#" method="#" role="search" id="searchForm">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Search . . ." name="srch-term" id="ed-srch-term" type="text">
+                        </div>
+                    </form>
 
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-
-                <div class="inner cover">
-                    <h1 class="cover-heading">Weather App</h1>
-                    <p id="location" class="lead"></p>
-                    <p>
-                        <a id="tranfer" href="#">
-                            <span id="temp" class="lead "></span>
-                            <span>°</span><span id="tempUnit" class="lead">C</span>
-                        </a>
-                    </p>
-
-                    <p id="weather"></p>
-                    <p id="icon"></p>
-
+                    <a href="https://en.wikipedia.org/wiki/Special:Random" class="button" target="_blank">I'm Feeling Lucky</a>
                 </div>
-
-                <div class="inner">
-                    <p>&copy; Howard Huang 2017</p>
-                </div>
-
             </div>
-
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="result"></div>
+                </div>
+            </div>
         </div>
-
     </div>
+
+
+
 </body>
 
 </html>
